@@ -90,7 +90,8 @@ nav{
     margin-right: 60px;
 }
 /* -----------utility class----------- */
-.lg-heading{
+.lg-heading .text-black{
+    color: black;
     font-size: 700;
 }
 .text-light{
@@ -129,5 +130,65 @@ nav{
 }
 .btn-primary{
     background-color: white;
+}
+
+.btn-secondary{
+    background-color: white;
+    border: 2px solid red;
+    /* display: inline-block; */
+    border-radius: 1.5em;
+    color: red;
+}
+
+.btn-secondary:hover {
+    background-color: #fcf3f2;
+}
+
+/* ----------------showcase section-------------------- */
+
+.showcase{
+    padding: 10rem 0;
+    background: white;
+}
+.row{
+    /* border: 2px solid red; */
+    height:350px;
+    background:white;
+    box-shadow: 5px 5px 20px 0px #aaa;
+    
+}
+.row1{
+    margin-bottom:10rem;
+}
+.row1 .image-bx, .row2 .text-bx{
+    float:left;
+    width: 50%;
+    
+}
+.row1 .text-bx, .row2 .image-bx {
+    float:right;
+    width: 50%;
+}
+
+.row .image-bx{
+/* border: 2px solid green; */
+height: 100%;
+
+} 
+.row .text-bx{
+    /* border: 2px solid red; */
+    padding: 3rem;
+    /* height: 100%; */
+}
+.row .image-bx img{
+   display: inline-block;
+   width: 100%;
+   height: 100%;
+    object-fit: cover;
+}
+.row .text-bx h1{
+    margin-bottom: 5rem;
+    margin-top: 0rem;
+    font-size: 2rem;
 }
  
