@@ -10,7 +10,6 @@ html{
 }
  body{
     font-family:  'Montserrat', sans-serif;
-
 }
 
 ul li{
@@ -41,31 +40,32 @@ h1, h2,h3 {
     background-size: cover;
     background-repeat: no-repeat;
 }
-.header .navbar .logo,
-.header .navbar a {
+.navbar{
+    padding: 1rem;
+}
+ .navbar .logo, .navbar a {
     color: white;
 }
-
-.header .navbar .logo {
+.navbar .logo {
     float: left; 
     font-size: 2.5rem;
-
 }
-.navbar a:link,
-.navbar a:visited
+.navbar a:link,.navbar a:visited
 {
     color: aquamarine;
 }
-
 .navbar a:hover{
     border-bottom: 2px solid white;
 }
-.header .navbar .nav-item {
+ .navbar .nav-item {
     float: right;
-    padding-top: .5rem;
-    padding-left: .5rem;
-    margin-left: 1.5rem;
+    display: inline-block;
+    padding:1rem;
     text-transform: uppercase;
+}
+.navbar .nav-items{
+    float:right;
+    margin-top: 1rem;
 }
 
 .container {
@@ -89,6 +89,9 @@ nav{
     margin-right: 60px;
 }
 /* -----------utility class----------- */
+.bg-dark{
+    background-color: #263238;
+}
 .lg-heading .text-black{
     color: black;
     font-size: 700;
@@ -241,4 +244,126 @@ height: 100%;
      text-align: center;
      color: white;
     
+}
+
+/* -----------------About section styling------ */
+.about{
+    padding: 2rem 0;
+}
+.lg-heading{
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+/* .about-heading{
+   border-bottom: solid red 0.4rem;
+   width:18% ;
+} */
+
+.about-heading::after{
+    /* heading using psedudo element */
+    content: "";
+    border:0.2rem solid red;
+    display: block;
+    width: 100%;
+    
+}
+.details{
+    margin-top: 2rem;
+    padding:0.5rem;
+    display: block;
+    position: relative;
+    /* border: 2px solid black; */
+    
+}
+.details::after{
+    content: '';
+    clear: both;    
+    display: block;
+    /* width: 100%; */
+    /* height: 150px; */
+}
+.list{
+   
+    width: 50%;
+    height: 100%;
+    float: left;
+    /* padding-left: 1.5rem; */
+    text-align: center;
+    /* border: 2px solid blue; */
+}
+.list .list1{
+    position:absolute;
+    float: left;
+    width: 100%;
+}
+.list .list2{
+    float: left;
+    position:absolute;
+    
+    
+}
+.details li::before{
+    content: '\2713';
+    color: rgb(185, 51, 73);
+    font-weight: bold;
+    padding-right: 1rem;
+}
+/* .list ul li{
+   list-style: circle;
+} */
+
+/* --------boxes class design---------- */
+.boxess{
+    display: block;
+    position: relative;
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 2px solid red;
+
+}
+.boxess::after{
+    content:'';
+    clear: both;
+    display: block;
+}
+.bo{
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+/* ------about section botttom----- */
+.banner{
+    display: block;
+    position: relative;
+    border:solid 2px black;
+    margin-top: 5rem;
+    background-color: rgba(245, 9, 9, 0.953);
+}
+.banner::after{
+    content:"";
+    display: block;
+    clear:both;
+    /* margin: 2rem; */
+    /* width:60%; */
+}
+.banner .left {
+float: left;
+width: 60%;
+/* position: absolute; */
+/* border:solid 2px greenyellow; */
+padding: 1rem;
+margin: 1rem;
+text-align: center;
+}
+.banner .right{
+    width:20%;
+    border:solid 2px white;
+    text-align: center;
+    padding: 1rem;
+    margin:1rem;
+    float: right;
+}
+.banner .right p{
+    /* text-transform: uppercase; */
 }
