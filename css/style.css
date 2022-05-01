@@ -48,6 +48,7 @@ h1, h2,h3 {
 }
 .navbar .logo {
     float: left; 
+    padding-top:1.5rem;
     font-size: 2.5rem;
 }
 .navbar a:link,.navbar a:visited
