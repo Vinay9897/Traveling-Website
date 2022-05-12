@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 <body>
@@ -12,17 +13,60 @@
         <div class="container">
             <h1 class="logo">VY</h1>
             <ul class="nav-items">
-                <li class="nav-item"><a href="./home.html">Home</a></li>
-                <li class="nav-item"><a href="./about.html">About</a></li>
                 <li class="nav-item"><a href="./contact.html">Contact</a></li>
+                <li class="nav-item"><a href="./about.html">About</a></li>
+                <li class="nav-item"><a href="./home.html">Home</a></li>
             </ul>
         </div>
       </nav>
       <section class="contact">
           <div class="container">
               <div class="contact-wrapper">
-                  <div class="contact-l">Hello</div>
-                  <div class="contact-r">world</div>
+                  <div class="contact-l">
+                      <div class="data">
+                          <i class="fas fa-map-marker-alt fa-3x text-red"></i>
+                          <h2>Location</h2>
+                          <p>kuldeep vihar colony,Gali No.2,Aligarh</p>
+                      </div>
+                      <div class="data">
+                          <i class="far fa-phone-square-alt fa-3x text-red"></i>
+                        <h2>e-mail</h2>
+                        <p>xyx@gmail.com</p>
+                      </div>
+                      <div class="data">
+                          <i class="fas fa-phone-square-alt fa-3x text-red"></i>
+                        <h2>call</h2>
+                        <p>+918080202343</p>
+                      </div>
+                      <img src="img/img4.jpg" alt="">
+                </div>
+                <div class="contact-r">
+                    <h2 class="lg-heading text-red"> Contact Us</h2>
+                    <p class="text-gray">
+                    Let us know your Question,
+                    suggestion and concern by 
+                    filling out this form
+                    </p>
+                        <form action="contact.php">
+                            <div class="fname">
+                                <label for="fname">UserName</label>
+                                <input type="fname" placeholder="YourName" name = "username" required>
+                            </div>
+                            <div class="email">
+                                <label for="">Email</label>
+                                <input type="email" placeholder="email-id" name="email" required>
+                            </div>
+                            <div class="phone">
+                                <label for="">Phone</label>
+                                <input type="number"placeholder="phone no" name= "phone" required>
+                            </div>
+                            <div class="message">
+                                <Label>Message</Label>
+                                <textarea type="text" placeholder="write your views" name="message" requird></textarea>
+                            </div>
+                            <input type="submit">
+                        </form>
+                </div>
               </div>
           </div>
       </section>
